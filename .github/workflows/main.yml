@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check login file
+      - name: Check dashboard file
         run: |
-          if [ ! -f "login.php" ]; then
-            echo "login.php not found!"
+          if [ ! -f "dashboard.php" ]; then
+            echo "dashboard.php not found!"
             exit 1
           fi
